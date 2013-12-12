@@ -1,0 +1,11 @@
+org/dnaselector/fasta/FastaFileReader.class
+org/dnaselector/countries/CountryFileReaderException.class
+org/dnaselector/countries/CountryLineReader.class
+org/dnaselector/countries/CountryLineReaderException.class
+org/dnaselector/fasta/FastaLineReader.class
+org/dnaselector/fasta/FastaFileReaderException.class
+org/dnaselector/fasta/FastaLine.class
+org/dnaselector/Main.class
+org/dnaselector/fasta/FastaLineReaderException.class
+org/dnaselector/countries/CountryLine.class
+org/dnaselector/countries/CountryFileReader.class

@@ -1,0 +1,3 @@
+integration/CountryFileReaderTest.class
+integration/FastaFileReaderTest.class
+org/dnaselector/fasta/FastaLineReaderTest.class

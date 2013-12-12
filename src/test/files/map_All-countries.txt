@@ -1,0 +1,19 @@
+#SampleID	BarcodeSequence	LinkerPrimerSequence	Country	Area	Description
+Arg.BA.2002	GACTACTACGTCTCTACAACAGA		Argentina	Buenos-Aires	Argentina_Buenos-Aires_2002
+Arg.Cor.1999	GACTACTACGTCTCTGGATAAGA		Argentina	Corrientes	Argentina_Corrientes_1999
+Arg.ER.1999	GACTACTATACGAGTGGATAAGA		Argentina	Entre-Rios	Argentina_Entre-Rios_1999
+Arg.Miss.1999	GACTACTACGTCTCTTGCTTAGA		Argentina	Missiones	Argentina_Missiones_1999
+USA.Cal.2011	GACTACTACGTCTCTATCCAAGA		USA	California	USA_California_2011
+USA.Ha.2002	GACTACTATACGAGTCCGATAGA		USA	Hawaii	USA_Hawaii_2002
+USA.No.1999	GACTACTCGCGTCGTGGATAAGA		USA	New-Orleans	USA_New-Orleans_1999
+USA.Sc.1999	GACTACTACGTCTCTAGACTAGA		USA	Santa-Clara	USA_Santa-Clara_1999
+OZ.Mel.2012	GACTACTACGTCTCTCCGATAGA		Australia	Melbourne	Australia_Melbourne_2012
+AK.2011	GACTACTATACGAGTAGACTAGA		New_Zealand	Auckland	NZ_Auckland_2011
+AK.2012	GACTACTATACGAGTATCCAAGA		New_Zealand	Auckland	NZ_Auckland_2012
+CH.2011	GACTACTCGCGTCGTAGACTAGA		New_Zealand	Christchurch	NZ_Christchurch_2011
+CH.2012	GACTACTCGCGTCGTCCGATAGA		New_Zealand	Christchurch	NZ_Christchurch_2012
+HA.2011	GACTACTACGTCTCTTTCACAGA		New_Zealand	Hastings	NZ_Hastings_2011
+NN.2011	GACTACTATACGAGTTTCACAGA		New_Zealand	Nelson	NZ_Nelson_2011
+NN.2012	GACTACTCGCGTCGTATCCAAGA		New_Zealand	Nelson	NZ_Nelson_2012
+WN.2011	GACTACTCGCGTCGTTTCACAGA		New_Zealand	Wellington	NZ_Wellington_2011
+WN.2012	GACTACTCGCGTCGTTGCTTAGA		New_Zealand	Wellington	NZ_Wellington_2012
