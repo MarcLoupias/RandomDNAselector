@@ -1,5 +1,6 @@
 package org.dnaselector.fasta;
 
+@SuppressWarnings("UnusedDeclaration")
 public class FastaLine {
     private String content;
     private String country;

@@ -15,6 +15,7 @@ import java.util.List;
 
 public class FastaFileReaderTest {
 
+    @SuppressWarnings("FieldCanBeLocal")
     private String testFilesDirPath;
     private String exampleFastaFilePath;
 
@@ -31,7 +32,6 @@ public class FastaFileReaderTest {
     public void getCurrentPathTest() {
         String s = System.getProperty("user.dir");
         Assert.assertNotNull(s);
-        //System.out.println("current user dir = " + s);
     }
 
     @Ignore
@@ -51,14 +51,12 @@ public class FastaFileReaderTest {
 
         File fFasta = new File(exampleFastaFilePath);
 
-        Long lineCount = 0l;
+        Integer lineCount = 0;
         try {
             lineCount = FastaFileReader.countFastaLines(fFasta);
         } catch (IOException e) {
             Assert.fail(ExceptionUtils.throwableToString(e));
         }
-
-        //System.out.println("Fasta file line count = " + lineCount);
 
         Assert.assertTrue(lineCount > 0);
         Assert.assertEquals(50, lineCount.longValue());
@@ -69,7 +67,6 @@ public class FastaFileReaderTest {
     public void countLinesForCountry_WN2011_InFastaFileTest() {
 
         File fFasta = new File(exampleFastaFilePath);
-        //File fFasta = new File("/home/marco/dev/RandomADNselector/doc/seqs_All-countries2.fna");
 
         Integer lineCount = 0;
         try {
@@ -79,8 +76,6 @@ public class FastaFileReaderTest {
         } catch (FastaFileReaderException e) {
             Assert.fail(ExceptionUtils.throwableToString(e));
         }
-
-        //System.out.println("Fasta file line count for country WN.2011 = " + lineCount);
 
         Assert.assertTrue(lineCount > 0);
         Assert.assertNotSame(100, lineCount);

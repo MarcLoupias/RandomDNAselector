@@ -1,7 +1,8 @@
 package org.dnaselector.countries;
 
 public class CountryLineReader {
-    public static CountryLine readLine(String countryFilePath, Long lineNumber, String lineContent) throws CountryLineReaderException {
+    public static CountryLine readLine(String countryFilePath, Integer lineNumber, String lineContent)
+            throws CountryLineReaderException {
 
         if(lineContent == null) {
             throw new CountryLineReaderException(countryFilePath, lineNumber, "Line content is null");

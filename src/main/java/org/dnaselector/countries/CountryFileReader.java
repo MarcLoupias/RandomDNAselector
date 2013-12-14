@@ -1,10 +1,6 @@
 package org.dnaselector.countries;
 
 import org.apache.commons.io.IOUtils;
-import org.dnaselector.fasta.FastaFileReaderException;
-import org.dnaselector.fasta.FastaLine;
-import org.dnaselector.fasta.FastaLineReader;
-import org.dnaselector.fasta.FastaLineReaderException;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -18,7 +14,7 @@ public class CountryFileReader {
         BufferedReader br = new BufferedReader(new InputStreamReader(stream));
 
         String strLine;
-        Long fileLineNumber = 0l;
+        Integer fileLineNumber = 0;
         List<String> countryList = new ArrayList<String>();
 
         try {

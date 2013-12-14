@@ -1,5 +1,6 @@
 package org.dnaselector.fasta;
 
+@SuppressWarnings("UnusedDeclaration")
 public class FastaFileReaderException extends Exception {
     public FastaFileReaderException() {
         super();
@@ -19,14 +20,6 @@ public class FastaFileReaderException extends Exception {
     }
 
     public FastaFileReaderException(String fastaFilePath, Integer lineNumber, String message, Throwable cause){
-        super("Invalid fasta line at line " + lineNumber + " for file " + fastaFilePath + " : " + message, cause);
-    }
-
-    public FastaFileReaderException(String fastaFilePath, Long lineNumber, String message){
-        super("Invalid fasta line at line " + lineNumber + " for file " + fastaFilePath + " : " + message);
-    }
-
-    public FastaFileReaderException(String fastaFilePath, Long lineNumber, String message, Throwable cause){
         super("Invalid fasta line at line " + lineNumber + " for file " + fastaFilePath + " : " + message, cause);
     }
 }

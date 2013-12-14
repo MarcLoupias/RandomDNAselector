@@ -24,7 +24,14 @@ public class Main {
         String sampleFilePath = cli.getString("sampleFilePath");
         String fastaFilePath = cli.getString("fastaFilePath");
         String outputFilePath = cli.getString("outputFilePath");
-        int wordNumber = cli.getInteger("wordNumber");
+
+        int wordNumber = 0;
+        try {
+            wordNumber = cli.getInteger("wordNumber");
+        } catch(NumberFormatException e){
+            CliHelper.printErrorFooter("Invalid number for --wordNumber option");
+            System.exit(-1);
+        }
 
         CliHelper.printConfig(sampleFilePath, fastaFilePath, wordNumber, outputFilePath);
 
@@ -36,12 +43,6 @@ public class Main {
         List<String> countries = CountryFileReader.getCountryList(sampleFile);
         for(String country : countries){
 
-            /*System.out.write("\r|".getBytes());
-            Thread.sleep(2);*/
-            //String infoCountry = "\r" + "| working on sampleId " + country + "\n";
-            /*String infoCountry = "\r| working on sampleId " + country;
-            System.out.write(infoCountry.getBytes());*/
-            //System.out.write(infoCountry.getBytes());
             System.out.println("| working on sampleId " + country);
             Thread.sleep(100);
 
@@ -74,7 +75,7 @@ public class Main {
 
                 lineIdToGet.add(val);
 
-                System.out.write("\r|".getBytes());
+                //System.out.write("\r|".getBytes());
                 Thread.sleep(2);
                 String infoWordNumber = "\r" + "| working on sampleId " + country + ", words generated " + i +
                         " for " + nbLineForCountry + " lines to process";

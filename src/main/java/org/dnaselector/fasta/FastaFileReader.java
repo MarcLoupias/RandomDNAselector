@@ -28,16 +28,15 @@ public class FastaFileReader {
         }
     }
 
-    public static Long countFastaLines(File input) throws IOException {
+    public static Integer countFastaLines(File input) throws IOException {
         FileInputStream stream = new FileInputStream(input);
         BufferedReader br = new BufferedReader(new InputStreamReader(stream));
 
-        String strLine;
-        Long count = 0l;
-        Long lineNumber = 0l;
+        Integer count = 0;
+        Integer lineNumber = 0;
 
         try {
-            while ((strLine = br.readLine()) != null)   {
+            while (br.readLine() != null)   {
 
                 lineNumber++;
                 if( (lineNumber % 2) != 0){
@@ -64,7 +63,7 @@ public class FastaFileReader {
 
         String strLine;
         Integer countRes = 0;
-        Long fileLineNumber = 0l;
+        Integer fileLineNumber = 0;
         Integer fastaLineNumber= 0;
 
         try {
@@ -120,7 +119,7 @@ public class FastaFileReader {
 
         String strLine;
         List<Integer> lineIdList = new ArrayList<Integer>();
-        Long fileLineNumber = 0l;
+        Integer fileLineNumber = 0;
         Integer fastaLineNumber= 0;
 
         try {
@@ -173,7 +172,7 @@ public class FastaFileReader {
         String strLine;
 
         List<String> res = new ArrayList<String>();
-        Long fileLineNumber = 0l;
+        Integer fileLineNumber = 0;
         Integer fastaLineNumber = 0;
 
         try {

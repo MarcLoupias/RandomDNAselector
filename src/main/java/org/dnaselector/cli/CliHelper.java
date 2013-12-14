@@ -26,14 +26,6 @@ public class CliHelper {
         System.out.println("+---------------------------------------------------------+");
     }
 
-    public static void printError() {
-
-    }
-
-    public static void printProcess() {
-
-    }
-
     public static void printErrorFooter(String content) {
         System.out.println("");
         System.out.println("+---------------------------------------------------------+");

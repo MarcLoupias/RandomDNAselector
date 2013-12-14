@@ -39,7 +39,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Line content is null", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);
@@ -55,7 +54,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Line content is empty", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);
@@ -72,7 +70,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Line first char is not > but C", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);
@@ -89,7 +86,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Column number should be 5 instead of 8", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);
@@ -106,7 +102,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Sub-line split length should be 2 instead of 5", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);
@@ -123,7 +118,6 @@ public class FastaLineReaderTest {
         } catch (FastaLineReaderException e) {
             Assert.assertNotNull(e);
             Assert.assertEquals("Invalid fasta line at line 51 for file testPath : Country name is empty", e.getMessage());
-            //System.out.println(e.getMessage());
         }
 
         Assert.assertNull(res);

@@ -1,7 +1,8 @@
 package org.dnaselector.fasta;
 
 public class FastaLineReader {
-    public static FastaLine readLine(String fastaFilePath, Integer lineNumber, String lineContent) throws FastaLineReaderException {
+    public static FastaLine readLine(String fastaFilePath, Integer lineNumber, String lineContent)
+            throws FastaLineReaderException {
 
         if(lineContent == null) {
             throw new FastaLineReaderException(fastaFilePath, lineNumber, "Line content is null");

@@ -22,16 +22,6 @@ public class Utils {
         return isValid;
     }
 
-    public static boolean isLongInList(Long id, List<Long> idList) {
-        for(Long val : idList){
-            if(val.longValue() == id.longValue()){
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     public static boolean isIntegerInList(Integer id, List<Integer> idList) {
         for(Integer val : idList){
             if(val == id.intValue()){

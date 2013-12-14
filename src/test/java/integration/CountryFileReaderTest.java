@@ -13,6 +13,7 @@ import java.util.List;
 
 public class CountryFileReaderTest {
 
+    @SuppressWarnings("FieldCanBeLocal")
     private String testFilesDirPath;
     private String exampleCountriesFilePath;
 
@@ -41,7 +42,6 @@ public class CountryFileReaderTest {
         }
 
         Assert.assertNotNull(res);
-        //System.out.println("Country file line count = " + res.size());
 
         Assert.assertEquals("Arg.BA.2002", res.get(0));
         Assert.assertEquals("Arg.Cor.1999", res.get(1));

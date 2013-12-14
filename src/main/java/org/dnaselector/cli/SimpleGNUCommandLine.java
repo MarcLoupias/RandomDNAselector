@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
  * @author zsugiart
  * @see <a href="http://www.zugiart.com/2010/11/simple-gnu-apache-commons-cli-java/">Found there</a>
  */
+@SuppressWarnings("UnusedDeclaration")
 public class SimpleGNUCommandLine {
 
     private Options options = new Options();
@@ -90,10 +91,8 @@ public class SimpleGNUCommandLine {
         return this.cmdLine.hasOption(optionName);
     }
 
-    /**
+    /*
      * Example, to run this class, must
-     *
-     * @param args
      */
     public static void main(String[] args)
             throws Exception {

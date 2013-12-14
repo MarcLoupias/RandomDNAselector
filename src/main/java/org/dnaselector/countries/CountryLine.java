@@ -1,5 +1,6 @@
 package org.dnaselector.countries;
 
+@SuppressWarnings("UnusedDeclaration")
 public class CountryLine {
     private String sampleId;
     private String barcodeSequence;
@@ -8,7 +9,10 @@ public class CountryLine {
     private String description;
     private String content;
 
-    public CountryLine(String sampleId, String barcodeSequence, String linkerPrimerSequence, String countryArea, String description, String content) {
+    public CountryLine(
+            String sampleId, String barcodeSequence, String linkerPrimerSequence, String countryArea, String description,
+            String content
+    ) {
         this.sampleId = sampleId;
         this.barcodeSequence = barcodeSequence;
         this.linkerPrimerSequence = linkerPrimerSequence;
