@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.045" errors="0" skipped="0" tests="7" name="org.dnaselector.fasta.FastaLineReaderTest">
+<testsuite failures="0" time="0.044" errors="0" skipped="0" tests="7" name="org.dnaselector.fasta.FastaLineReaderTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/jdk1.7.0_25/jre/lib/i386"/>
@@ -59,11 +59,11 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.005" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_wrongLineColumnNumber_Test"/>
-  <testcase time="0" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_wrongSubLineColumnNumber_Test"/>
-  <testcase time="0.002" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_emptyCountryName_Test"/>
-  <testcase time="0.002" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_OK_Test"/>
-  <testcase time="0.001" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_contentIsNull_Test"/>
-  <testcase time="0.002" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_contentIsEmpty_Test"/>
+  <testcase time="0.006" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_OK_Test"/>
+  <testcase time="0" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_contentIsNull_Test"/>
+  <testcase time="0" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_contentIsEmpty_Test"/>
   <testcase time="0.001" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_wrongLineFirstChar_Test"/>
+  <testcase time="0.001" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_wrongLineColumnNumber_Test"/>
+  <testcase time="0.001" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_wrongSubLineColumnNumber_Test"/>
+  <testcase time="0.001" classname="org.dnaselector.fasta.FastaLineReaderTest" name="readFastaLine_emptyCountryName_Test"/>
 </testsuite>

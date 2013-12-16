@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.016" errors="0" skipped="1" tests="6" name="integration.FastaFileReaderTest">
+<testsuite failures="0" time="0.02" errors="0" skipped="1" tests="6" name="integration.FastaFileReaderTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/jdk1.7.0_25/jre/lib/i386"/>
@@ -63,8 +63,8 @@
   <testcase time="0" classname="integration.FastaFileReaderTest" name="readTest">
     <skipped/>
   </testcase>
-  <testcase time="0.003" classname="integration.FastaFileReaderTest" name="countLinesInFastaFileTest"/>
-  <testcase time="0.003" classname="integration.FastaFileReaderTest" name="countLinesForCountry_WN2011_InFastaFileTest"/>
-  <testcase time="0.006" classname="integration.FastaFileReaderTest" name="getLinesIdForCountryTest"/>
+  <testcase time="0.01" classname="integration.FastaFileReaderTest" name="countLinesInFastaFileTest"/>
+  <testcase time="0" classname="integration.FastaFileReaderTest" name="countLinesForCountry_WN2011_InFastaFileTest"/>
+  <testcase time="0.005" classname="integration.FastaFileReaderTest" name="getLinesIdForCountryTest"/>
   <testcase time="0.004" classname="integration.FastaFileReaderTest" name="getLinesByIdTest"/>
 </testsuite>

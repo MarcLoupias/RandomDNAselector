@@ -21,16 +21,17 @@ public class CountryLineReader {
                     countryFilePath, lineNumber, "Line split result with tab separator is null"
             );
         }
-        if(lineStrings.length != 6) { // warning, there is 2 tabs for barcodesequence column
+        /*if(lineStrings.length != 6) { // warning, there is 2 tabs for barcodesequence column
             throw new CountryLineReaderException(
                     countryFilePath, lineNumber, "Column number should be 6 instead of " + lineStrings.length
             );
-        }
+        }*/
 
         if(lineStrings[0] == null || lineStrings[0].isEmpty()){
             throw new CountryLineReaderException(countryFilePath, lineNumber, "Country column is mandatory");
         }
 
-        return new CountryLine(lineStrings[0], lineStrings[1], lineStrings[3], lineStrings[4], lineStrings[5], lineContent);
+        //return new CountryLine(lineStrings[0], lineStrings[1], lineStrings[3], lineStrings[4], lineStrings[5], lineContent);
+        return new CountryLine(lineStrings[0], "", "", "", "", lineContent);
     }
 }

@@ -29,6 +29,9 @@ If output file exists, records are added to the end of the existing file.
 Usage
 -----
 
+Rename RandomDNAselector-1.1-SNAPSHOT-jar-with-dependencies.jar in RandomDNAselector-1.0.jar for conveniance then :
+
+
     java -jar RandomDNAselector-1.0.jar --sampleFilePath=<sampleFilePath> --fastaFilePath=<fastaFilePath> --wordNumber=<wordNumber> --outputFilePath=<outputFilePath>
 
 
